@@ -24,6 +24,13 @@
         }
         .flower {
             position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #ffb6c1;
+            border-radius: 50%;
+            box-shadow:
+                0 0 0 10px #ffc0cb,
+                0 0 0 20px #ffe4e1;
             animation: move 10s linear infinite;
         }
         @keyframes move {
@@ -34,14 +41,19 @@
                 transform: translateX(100%);
             }
         }
+        .flower:nth-child(1) { top: 10%; }
+        .flower:nth-child(2) { top: 30%; animation-delay: 2s; }
+        .flower:nth-child(3) { top: 50%; animation-delay: 4s; }
+        .flower:nth-child(4) { top: 70%; animation-delay: 6s; }
+        .flower:nth-child(5) { top: 90%; animation-delay: 8s; }
     </style>
 </head>
 <body>
     <div class="message">Happy National Girlfriend Day, Teerak!</div>
-    <img src="https://via.placeholder.com/50x50.png?text=Flower" class="flower" style="top: 10%;" />
-    <img src="https://via.placeholder.com/50x50.png?text=Flower" class="flower" style="top: 30%;" />
-    <img src="https://via.placeholder.com/50x50.png?text=Flower" class="flower" style="top: 50%;" />
-    <img src="https://via.placeholder.com/50x50.png?text=Flower" class="flower" style="top: 70%;" />
-    <img src="https://via.placeholder.com/50x50.png?text=Flower" class="flower" style="top: 90%;" />
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
 </body>
 </html>
